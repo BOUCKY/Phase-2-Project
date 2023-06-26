@@ -1,0 +1,223 @@
+{
+  "recipes": {
+    "drinks": [
+      {
+        "title": "Classic Margarita",
+        "time": "5 minutes",
+        "ingredients": [
+          "2 oz tequila",
+          "1 oz lime juice",
+          "1 oz triple sec",
+          "1 tsp sugar",
+          "Salt (for rimming the glass)",
+          "Lime wedges (for garnish)"
+        ],
+        "instructions": [
+          "Rim the glass with salt.",
+          "In a shaker, combine tequila, lime juice, triple sec, and sugar.",
+          "Shake well and strain into the glass filled with ice.",
+          "Garnish with lime wedges."
+        ]
+      },
+      {
+        "title": "Strawberry Mojito",
+        "time": "10 minutes",
+        "ingredients": [
+          "2 oz white rum",
+          "4 fresh strawberries",
+          "6 fresh mint leaves",
+          "1 oz lime juice",
+          "2 tsp sugar",
+          "Club soda",
+          "Ice"
+        ],
+        "instructions": [
+          "In a glass, muddle strawberries, mint leaves, lime juice, and sugar.",
+          "Add rum and ice.",
+          "Top with club soda and stir gently."
+        ]
+      }
+    ],
+    "breakfast": [
+      {
+        "title": "Fluffy Pancakes",
+        "time": "20 minutes",
+        "ingredients": [
+          "1 cup all-purpose flour",
+          "2 tbsp sugar",
+          "2 tsp baking powder",
+          "1/2 tsp salt",
+          "1 cup milk",
+          "1 large egg",
+          "2 tbsp unsalted butter, melted",
+          "1 tsp vanilla extract"
+        ],
+        "instructions": [
+          "In a bowl, whisk together flour, sugar, baking powder, and salt.",
+          "In a separate bowl, whisk together milk, egg, melted butter, and vanilla extract.",
+          "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+          "Heat a non-stick pan over medium heat and pour 1/4 cup of batter for each pancake.",
+          "Cook until bubbles form on the surface, then flip and cook until golden brown.",
+          "Serve with your favorite toppings."
+        ]
+      },
+      {
+        "title": "Avocado Toast",
+        "time": "5 minutes",
+        "ingredients": [
+          "2 slices of bread",
+          "1 ripe avocado",
+          "1 tbsp lemon juice",
+          "Salt and pepper to taste",
+          "Red pepper flakes (optional)",
+          "Fresh cilantro or basil (for garnish)"
+        ],
+        "instructions": [
+          "Toast the bread slices until golden brown.",
+          "In a bowl, mash the avocado with lemon juice, salt, and pepper.",
+          "Spread the avocado mixture onto the toast.",
+          "Sprinkle with red pepper flakes (if desired) and garnish with cilantro or basil."
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "title": "Caprese Salad",
+        "time": "10 minutes",
+        "ingredients": [
+          "2 ripe tomatoes, sliced",
+          "8 oz fresh mozzarella cheese, sliced",
+          "Fresh basil leaves",
+          "2 tbsp extra virgin olive oil",
+          "Balsamic glaze",
+          "Salt and pepper to taste"
+        ],
+        "instructions": [
+          "Alternate slices of tomato and mozzarella on a serving plate.",
+          "Tuck basil leaves in between the tomato and mozzarella slices.",
+          "Drizzle with olive oil and balsamic glaze.",
+          "Season with salt and pepper."
+        ]
+      },
+      {
+        "title": "Chicken Caesar Wrap",
+        "time": "15 minutes",
+        "ingredients": [
+          "2 large tortilla wraps",
+          "2 cups cooked chicken breast, shredded",
+          "1/2 cup Caesar dressing",
+          "1 cup romaine lettuce, chopped",
+          "1/4 cup grated Parmesan cheese",
+          "Salt and pepper to taste"
+        ],
+        "instructions": [
+          "Lay out the tortilla wraps and spread Caesar dressing evenly on each.",
+          "Place the shredded chicken, romaine lettuce, and Parmesan cheese in the center of each wrap.",
+          "Season with salt and pepper.",
+          "Fold in the sides of the wraps and roll tightly.",
+          "Slice in half and serve."
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "title": "Spaghetti Bolognese",
+        "time": "30 minutes",
+        "ingredients": [
+          "8 oz spaghetti",
+          "1 lb ground beef",
+          "1 small onion, chopped",
+          "2 cloves garlic, minced",
+          "1 can crushed tomatoes",
+          "1/4 cup tomato paste",
+          "1/2 cup beef broth",
+          "1 tsp dried basil",
+          "1 tsp dried oregano",
+          "Salt and pepper to taste",
+          "Grated Parmesan cheese (for garnish)"
+        ],
+        "instructions": [
+          "Cook the spaghetti according to the package instructions.",
+          "In a large skillet, brown the ground beef over medium heat.",
+          "Add the onion and garlic, and cook until softened.",
+          "Stir in the crushed tomatoes, tomato paste, beef broth, basil, oregano, salt, and pepper.",
+          "Simmer for 15-20 minutes, stirring occasionally.",
+          "Serve the sauce over the cooked spaghetti and garnish with Parmesan cheese."
+        ]
+      },
+      {
+        "title": "Grilled Salmon with Lemon Butter Sauce",
+        "time": "20 minutes",
+        "ingredients": [
+          "2 salmon fillets",
+          "2 tbsp butter, melted",
+          "2 tbsp lemon juice",
+          "2 cloves garlic, minced",
+          "1 tsp dried dill",
+          "Salt and pepper to taste",
+          "Fresh parsley (for garnish)"
+        ],
+        "instructions": [
+          "Preheat the grill to medium-high heat.",
+          "In a small bowl, combine melted butter, lemon juice, minced garlic, dried dill, salt, and pepper.",
+          "Brush the salmon fillets with the butter mixture.",
+          "Grill the salmon for 4-5 minutes per side, or until cooked to your desired doneness.",
+          "Remove from the grill and garnish with fresh parsley."
+        ]
+      }
+    ],
+    "dessert": [
+      {
+        "title": "Chocolate Chip Cookies",
+        "time": "25 minutes",
+        "ingredients": [
+          "1 cup unsalted butter, softened",
+          "1 cup granulated sugar",
+          "1 cup packed brown sugar",
+          "2 large eggs",
+          "1 tsp vanilla extract",
+          "3 cups all-purpose flour",
+          "1 tsp baking soda",
+          "1/2 tsp salt",
+          "2 cups chocolate chips"
+        ],
+        "instructions": [
+          "Preheat the oven to 375°F (190°C).",
+          "In a large bowl, cream together butter, granulated sugar, and brown sugar until smooth.",
+          "Beat in the eggs one at a time, then stir in the vanilla.",
+          "In a separate bowl, combine flour, baking soda, and salt.",
+          "Gradually add the dry ingredients to the butter mixture and mix well.",
+          "Stir in the chocolate chips.",
+          "Drop rounded tablespoonfuls of dough onto ungreased baking sheets.",
+          "Bake for 9-11 minutes or until golden brown.",
+          "Allow the cookies to cool on the baking sheets for a few minutes before transferring to wire racks to cool completely."
+        ]
+      },
+      {
+        "title": "Strawberry Shortcake",
+        "time": "30 minutes",
+        "ingredients": [
+          "2 cups all-purpose flour",
+          "1/4 cup granulated sugar",
+          "1 tbsp baking powder",
+          "1/2 tsp salt",
+          "1/2 cup unsalted butter, cold and cubed",
+          "2/3 cup milk",
+          "2 cups sliced strawberries",
+          "Whipped cream"
+        ],
+        "instructions": [
+          "Preheat the oven to 425°F (220°C).",
+          "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+          "Cut in the cold butter using a pastry cutter or your fingers until the mixture resembles coarse crumbs.",
+          "Stir in the milk until just combined.",
+          "Turn the dough out onto a lightly floured surface and knead gently a few times.",
+          "Pat the dough into a 1-inch thick rectangle and cut out shortcakes using a round biscuit cutter.",
+          "Place the shortcakes onto a baking sheet and bake for 12-15 minutes or until golden brown.",
+          "Allow the shortcakes to cool slightly.",
+          "To assemble, split the shortcakes in half, top with sliced strawberries and whipped cream, then replace the top half of the shortcake."
+        ]
+      }
+    ]
+  }
+}
