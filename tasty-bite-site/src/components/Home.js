@@ -2,13 +2,12 @@ import React from "react";
 import RecipeCard from "./RecipeCard";
 
 const Home = ({foodData}) => {
-
-    //   console.log(foodData)
    
       const renderData = foodData.map((foodObject) => {
         return(
             <RecipeCard
                 key={foodObject.id}
+                category={foodObject.category}
                 image={foodObject.image}
                 title={foodObject.title}
                 time={foodObject.time}
