@@ -7,8 +7,9 @@ import AddRecipe from './AddRecipe';
 import Favorites from './Favorites';
 
 function App() {
+
   return (
-<BrowserRouter>
+    <BrowserRouter>
       <div className="App">
         <NavBar />
         <Routes>
