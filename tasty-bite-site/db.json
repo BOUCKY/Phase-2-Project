@@ -2,6 +2,7 @@
     "recipes": [
       {
         "id": 1,
+        "category": "drinks",
         "title": "Classic Margarita",
         "image": "https://momsdinner.net/wp-content/uploads/2021/05/Classic-Margarita-Recipe-2.jpg",
         "time": "5 minutes",
@@ -22,6 +23,7 @@
       },
       {
         "id": 2,
+        "category": "drinks",
         "title": "Strawberry Mojito",
         "image": "https://theblondcook.com/wp-content/uploads/2022/05/strawberry-mojitos-2-4.jpg",
         "time": "10 minutes",
@@ -41,6 +43,7 @@
         ]
       },
       {
+        "category": "drinks",
         "id": 3,
         "title": "Moscow Mule",
         "image": "https://bakeitwithlove.com/wp-content/uploads/2022/07/Moscow-Mule-sq.jpg",
@@ -60,6 +63,7 @@
         ]
       },
       {
+        "category": "drinks",
         "id": 4,
         "title": "Cosmopolitan",
         "image": "https://amandascookin.com/wp-content/uploads/2021/05/Cosmopolitan-Cocktail-RC.jpg",
@@ -81,6 +85,7 @@
         ]
       },
       {
+        "category": "breakfast",
         "id": 5,
         "title": "Fluffy Pancakes",
         "image": "https://www.marionskitchen.com/wp-content/uploads/2021/08/20201116_Marions-Best-Pancakes-19.jpg",
@@ -105,6 +110,7 @@
         ]
       },
       {
+        "category": "breakfast",
         "id": 6,
         "title": "Avocado Toast",
         "image": "https://www.billyparisi.com/wp-content/uploads/2023/02/avocado-toast1.jpg",
@@ -125,6 +131,7 @@
         ]
       },
       {
+        "category": "breakfast",
         "id": 7,
         "title": "Greek Yogurt Parfait",
         "image": "https://i2.wp.com/dishesdelish.com/wp-content/uploads/2018/09/Yogurt-Parfait-square-1.jpg",
@@ -143,6 +150,7 @@
         ]
       },
       {
+        "category": "breakfast",
         "id": 8,
         "title": "Egg and Cheese Breakfast Sandwich",
         "image": "https://i.pinimg.com/originals/a4/54/6f/a4546fd3f95385c438322ed0f7d5d788.jpg",
@@ -163,6 +171,7 @@
         ]
       },
       {
+        "category": "lunch",
         "id": 9,
         "title": "Caprese Salad",
         "image": "https://www.wholesomeyum.com/wp-content/uploads/2022/05/wholesomeyum-Caprese-Salad-5.jpg",
@@ -183,6 +192,7 @@
         ]
       },
       {
+        "category": "lunch",
         "id": 10,
         "title": "Chicken Caesar Wrap",
         "image": "https://yummynoises.com/wp-content/uploads/2020/05/Chicken-Caesar-Salad-Wraps-Featured.jpeg",
@@ -204,6 +214,7 @@
         ]
       },
       {
+        "category": "lunch",
         "id": 11,
         "title": "BLT Sandwich",
         "image": "https://bakeitwithlove.com/wp-content/uploads/2023/03/blt-sq.jpg",
@@ -229,6 +240,7 @@
         ]
       },
       {
+        "category": "lunch",
         "id": 12,
         "title": "Chicken Salad Sandwich",
         "image": "https://joyfoodsunshine.com/wp-content/uploads/2020/07/best-chicken-salad-sandwich-recipe-2.jpg",
@@ -256,6 +268,7 @@
         ]
       },
       {
+        "category": "dinner",
         "id": 13,
         "title": "Spaghetti Bolognese",
         "image": "https://www.kitchensanctuary.com/wp-content/uploads/2019/09/Spaghetti-Bolognese-square-FS-0204.jpg",
@@ -283,6 +296,7 @@
         ]
       },
       {
+        "category": "dinner",
         "id": 14,
         "title": "Grilled Salmon with Lemon Butter Sauce",
         "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F7d7b4bc09164d58ab7b68945d989b4817a61cbb4",
@@ -305,6 +319,7 @@
         ]
       },
       {
+        "category": "dinner",
         "id": 15,
         "title": "Mac and Cheese",
         "image": "https://sugarspunrun.com/wp-content/uploads/2023/03/Easy-mac-and-cheese-recipe-1-of-1.jpg",
@@ -329,6 +344,7 @@
         ]
       },
       {
+        "category": "dinner",
         "id": 16,
         "title": "Chicken Parmesan",
         "image": "https://www.eatingwell.com/thmb/-VdU_t8MI___brO6ez2AJO6G8dA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Baked-Chicken-Parmesan-1x1-0879-64e37fdc79804c18a81f4b805c5226b7.jpg",
@@ -357,6 +373,7 @@
         ]
       },
       {
+        "category": "dessert",
         "id": 17,
         "title": "Chocolate Chip Cookies",
         "image": "https://joyfoodsunshine.com/wp-content/uploads/2016/01/best-chocolate-chip-cookies-recipe-ever-no-chilling-1.jpg",
@@ -385,6 +402,7 @@
         ]
       },
       {
+        "category": "dessert",
         "id": 18,
         "title": "Strawberry Shortcake",
         "image": "https://healthyrecipesblogs.com/wp-content/uploads/2020/10/strawberry-shortcake-featured-2022.jpg",
@@ -412,6 +430,7 @@
         ]
       },
       {
+        "category": "dessert",
         "id": 19,
         "title": "No-Bake Oreo Cheesecake",
         "image": "https://cheneetoday.com/wp-content/uploads/2021/07/no-bake-oreo-cheesecake-1.jpg",
@@ -438,6 +457,7 @@
         ]
       },
       {
+        "category": "dessert",
         "id": 20,
         "title": "Brownies",
         "image": "https://www.ifyougiveablondeakitchen.com/wp-content/uploads/2014/05/homemade-brownies-from-scratch-1-500x500.jpg",
