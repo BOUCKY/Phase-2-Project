@@ -27,3 +27,18 @@
 .nav-bar-link:hover{
     opacity: 1;
 }
+.nav-bar-link::after{
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: #96350b;
+    display: block;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s ease;
+}
+.nav-bar-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
