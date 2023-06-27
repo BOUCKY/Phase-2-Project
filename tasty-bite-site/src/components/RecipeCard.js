@@ -3,15 +3,19 @@ import { useState } from "react";
 
 const RecipeCard = ({title, image, time, ingredients, instructions}) => {
 
-    const [card, setCard] = useState("true")
-
-    function switchCard(){
-        setCard(!card)
+    const [card, setCard] = useState(true)
+    
+    function handleFront(){
+        setCard(false)
     }
 
-    const front = <div onClick={switchCard}><img src = {image} height={300} width={300} alt = "food"></img><p className="title">{title}</p></div>
+    function handleBack(){
+        setCard(true)
+    }
 
-    const back = <div onClick={switchCard}><p className="ingredients">{ingredients}</p><p className="instructions">{instructions}</p><p>{time}</p></div>
+    const front = <div onClick={handleFront}><img src = {image} height={300} width={300} alt = "food"></img><p className="title">{title}</p></div>
+
+    const back = <div onClick={handleBack}><p className="ingredients">{ingredients}</p><p className="instructions">{instructions}</p><p>{time}</p></div>
    
     return(
         <div className="recipe-card">
