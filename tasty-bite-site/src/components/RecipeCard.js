@@ -4,9 +4,10 @@ import React, {useState} from "react";
 // import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 
 
-const RecipeCard = ({title, image, time, ingredients, instructions}) => {
+const RecipeCard = ({title, image, time, ingredients, instructions, favorite, changeFavorite, id}) => {
 
     const [card, setCard] = useState(true)
+
     
     function handleFront(){
         setCard(false)
@@ -16,10 +17,10 @@ const RecipeCard = ({title, image, time, ingredients, instructions}) => {
         setCard(true)
     }
 
-    const [favorite, setFavorite] = useState(false)
     
     const handleFavorite = () =>{
-    setFavorite(!favorite)}
+        changeFavorite(id)
+    }
 
 
     const front = <div onClick={handleFront}><img className="foodPic" src = {image} height={300} width={300} alt = "food"></img><p className="title">{title}</p></div>

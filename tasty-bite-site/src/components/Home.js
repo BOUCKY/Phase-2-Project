@@ -2,12 +2,15 @@ import React from "react";
 import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
 
-const Home = ({foodData}) => {
+const Home = ({foodData,changeFavorite}) => {
    
       const renderData = foodData.map((foodObject) => {
         return(
             <RecipeCard
+                id = {foodObject.id}
                 key={foodObject.id}
+                favorite={foodObject.favorite}
+                changeFavorite = {changeFavorite}
                 category={foodObject.category}
                 image={foodObject.image}
                 title={foodObject.title}
@@ -17,7 +20,6 @@ const Home = ({foodData}) => {
             />
         )
       })
-      console.log(renderData)
 
     return(
         <div className="home">

@@ -1,8 +1,10 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
+import "../Recipe.css"
 
-const Favorites = ({favoriteFoods, changeFavorite}) => {
-    const favoriteCards = favoriteFoods.map(foodObject => <RecipeCard id = {foodObject.id}
+function Drinks({allDrinks,changeFavorite}){
+
+    const drinkCards = allDrinks.map(foodObject => <RecipeCard id = {foodObject.id}
         key={foodObject.id}
         favorite={foodObject.favorite}
         changeFavorite = {changeFavorite}
@@ -13,10 +15,12 @@ const Favorites = ({favoriteFoods, changeFavorite}) => {
         ingredients={foodObject.ingredients}
         instructions={foodObject.instructions}/>)
     return(
-        <div className="favorites">
-            {favoriteCards}
+        <div className="home">
+            <div className="recipeContainer">
+                {drinkCards}
+            </div>
         </div>
     )
 }
 
-export default Favorites
+export default Drinks
