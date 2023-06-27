@@ -8,12 +8,12 @@
 }
 
 .form{
-    width: 80%;
+    width: 800px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border:  5px solid #96350b;
-    background-color: #ffc363;
+    background-color: #fdfcda;
     padding: 20px 0px;
 }
 
@@ -26,14 +26,14 @@
     margin: 20px 20px;
     width: 90%;
     text-align: center;
-    background-color: #faf7a0;
+    background-color: rgb(254, 254, 234);
     border: 3px solid #96350b;
 }
 
 .submitButton{
     padding: 10px 0px;
     margin: 20px 20px;
-    background-color: #faf7a0;
+    background-color: #faf8c3;
     border: 2px solid #96350b;
     width: 150px;
     cursor: pointer;

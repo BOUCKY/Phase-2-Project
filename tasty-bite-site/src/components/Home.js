@@ -1,4 +1,5 @@
 import React from "react";
+import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
 
 const Home = ({foodData}) => {
@@ -20,7 +21,9 @@ const Home = ({foodData}) => {
 
     return(
         <div className="home">
-            {renderData}
+            <div className="recipeContainer">
+                {renderData}
+            </div>
         </div>
     )
 }
