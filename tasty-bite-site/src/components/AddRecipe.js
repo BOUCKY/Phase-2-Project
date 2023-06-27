@@ -64,7 +64,7 @@ const AddRecipe = ({setFoodData}) => {
                     type="number"
                     id='time'
                     name='time'
-                    placeholder="Time"
+                    placeholder="Time in Minutes"
                     value={formData.time}
                     onChange={handleChange}
                 />
