@@ -1,15 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import RecipeCard from "./RecipeCard";
 
-const Home = () => {
-
-    const [foodData, setFoodData] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:3000/recipes')
-          .then((response) => response.json())
-          .then((data) => setFoodData(data))
-      }, [])
+const Home = ({foodData}) => {
 
     //   console.log(foodData)
    
