@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import '../Form.css'
+
 const initialState = {
     category: '',
     title: '',
@@ -31,58 +33,59 @@ const AddRecipe = ({setFoodData}) => {
         setFormData((currentFormData) => ({...currentFormData, [e.target.name]: e.target.value}))
     }
     return(
-        <div>
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                id='category'
-                name='category'
-                placeholder="category"
-                value={formData.category}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                id='title'
-                name='title'
-                placeholder="title"
-                value={formData.title}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                id='image'
-                name='image'
-                placeholder="image"
-                value={formData.image}
-                onChange={handleChange}
-            />
-            <input
-                type="number"
-                id='time'
-                name='time'
-                placeholder="time"
-                value={formData.time}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                id='ingredients'
-                name='ingredients'
-                placeholder="ingredients"
-                value={formData.ingredients}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                id='instructions'
-                name='instructions'
-                placeholder="instructions"
-                value={formData.instructions}
-                onChange={handleChange}
-            />
-            <button type='submit'>Submit Recipe!</button>
-        </form>
+        <div className="formContainer">
+            <h1 className="yourRecipe">Add Your Recipe Here!</h1>
+            <form className="form" onSubmit={handleSubmit}>
+                <input className="formInput"
+                    type="text"
+                    id='category'
+                    name='category'
+                    placeholder="Category"
+                    value={formData.category}
+                    onChange={handleChange}
+                />
+                <input className="formInput"
+                    type="text"
+                    id='title'
+                    name='title'
+                    placeholder="Title"
+                    value={formData.title}
+                    onChange={handleChange}
+                />
+                <input className="formInput"
+                    type="text"
+                    id='image'
+                    name='image'
+                    placeholder="Image"
+                    value={formData.image}
+                    onChange={handleChange}
+                />
+                <input className="formInput"
+                    type="number"
+                    id='time'
+                    name='time'
+                    placeholder="Time"
+                    value={formData.time}
+                    onChange={handleChange}
+                />
+                <input className="formInput"
+                    type="text"
+                    id='ingredients'
+                    name='ingredients'
+                    placeholder="Ingredients"
+                    value={formData.ingredients}
+                    onChange={handleChange}
+                />
+                <input className="formInput"
+                    type="text"
+                    id='instructions'
+                    name='instructions'
+                    placeholder="Instructions"
+                    value={formData.instructions}
+                    onChange={handleChange}
+                />
+                <button className="submitButton" type='submit'>Submit Recipe!</button>
+            </form>
         </div>
     )
 }
