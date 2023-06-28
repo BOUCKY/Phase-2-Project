@@ -16,39 +16,37 @@ function App() {
 
   const [foodData, setFoodData] = useState([]);
 
+  // These filter the recipe cards by food category and favorites.
   const favoriteFoods = foodData.filter(food => {
     return food.favorite 
   })
-
   const allDrinks = foodData.filter(food => {
     return food.category.toLowerCase() === "drinks"
   })
-
   const allDinners = foodData.filter(food => {
     return food.category.toLowerCase() === "dinner"
   })
-
   const allLunches = foodData.filter(food => {
     return food.category.toLowerCase() === "lunch"
   })
-
   const allDesserts = foodData.filter(food => {
     return food.category.toLowerCase() === "dessert"
   })
-
   const allBreakfast = foodData.filter(food => {
     return food.category.toLowerCase() === "breakfast"
   })
 
+  // Put all of the food categories together to pass down to Home so we can display the recipe cards based on their category
   const allFoods = {allDrinks, allBreakfast, allLunches, allDinners, allDesserts}
 
+  // Fetch the food data from the db.json. Use useEffect to ge them to display on the page
   useEffect(() => {
       fetch('http://localhost:3000/recipes')
         .then((response) => response.json())
         .then((data) => setFoodData(data))
     }, [])
   
-
+  // Displays just the favorited recipe cards on the favorite page
   function changeFavorite(id){
     console.log("hello")
     const foods = [...foodData]
@@ -57,15 +55,6 @@ function App() {
     })
     foodFound.favorite = !foodFound.favorite
     setFoodData(foods)
-    // const foods = foodData.map(food => {
-    //   if (food.id === id){
-    //     return {...food, favorite: !food.favorite}
-    //   }
-    //   else{
-    //     return food
-    //   }
-    // })
-    // setFoodData(foods)
   }
 
   return (
@@ -75,9 +64,11 @@ function App() {
         <h1 className='tasty-bites'>Tasty Bites</h1>
         <CategoryNav />
         <Routes>
-          <Route path='/' element={<Home foodData={foodData} changeFavorite={changeFavorite} allFoods={allFoods}/>} />
-          <Route path='addrecipe' element={<AddRecipe setFoodData={setFoodData}/>} />
-          <Route path='favorites' element={<Favorites favoriteFoods={favoriteFoods} changeFavorite ={changeFavorite}/>} />
+          <Route path='/' element={<Home changeFavorite={changeFavorite} allFoods={allFoods} />} />
+          <Route path='addrecipe' element={<AddRecipe setFoodData={setFoodData} />} />
+          <Route path='favorites' element={<Favorites favoriteFoods={favoriteFoods} changeFavorite ={changeFavorite} allFoods={allFoods} />} />
+
+          {/* Everything below are routes to show just one food category at a time */}
           <Route path='dinners' element={<Dinners allDinners = {allDinners} changeFavorite = {changeFavorite}/>}/>
           <Route path='desserts' element={<Desserts allDesserts = {allDesserts} changeFavorite = {changeFavorite} />} />
           <Route path='lunch' element={<Lunch allLunches = {allLunches} changeFavorite = {changeFavorite}/>} />

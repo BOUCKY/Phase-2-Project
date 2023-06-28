@@ -12,11 +12,9 @@
     flex-wrap: wrap;
     align-content: center;
 }
-
 .nav-bar-list{
     list-style: none;
 }
-
 .nav-bar-link{
     text-decoration: none;
     opacity: 0.6;

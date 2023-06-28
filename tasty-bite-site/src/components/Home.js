@@ -2,7 +2,7 @@ import React from "react";
 import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
 
-const Home = ({foodData,changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
+const Home = ({changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
     
     const renderCard = (foodObject) => {
         return(
@@ -20,15 +20,15 @@ const Home = ({foodData,changeFavorite, allFoods:{allDrinks, allBreakfast, allLu
             />
         )
       }
-    const renderData = foodData.map(renderCard)
 
     return(
-
         <div className="home">
             <h2 className="foodTitle" >Drinks</h2>
+            {/* Only show the drink cards underneath the drinks header */}
             <div className="recipeContainer">
                 {allDrinks.map(renderCard)}
             </div>
+            {/* same as above */}
             <h2 className="foodTitle" >Breakfast</h2>
             <div className="recipeContainer">
                 {allBreakfast.map(renderCard)}
