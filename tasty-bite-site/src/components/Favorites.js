@@ -13,8 +13,10 @@ const Favorites = ({favoriteFoods, changeFavorite}) => {
         ingredients={foodObject.ingredients}
         instructions={foodObject.instructions}/>)
     return(
-        <div className="favorites">
-            {favoriteCards}
+        <div className="home">
+            <div className="recipeContainer">
+                {favoriteCards}
+            </div>
         </div>
     )
 }
