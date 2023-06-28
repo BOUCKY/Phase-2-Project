@@ -2,16 +2,27 @@ import React from "react";
 import RecipeCard from "./RecipeCard";
 
 const Favorites = ({favoriteFoods, changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
-    const favoriteCards = favoriteFoods.map(foodObject => <RecipeCard id = {foodObject.id}
-        key={foodObject.id}
-        favorite={foodObject.favorite}
-        changeFavorite = {changeFavorite}
-        category={foodObject.category}
-        image={foodObject.image}
-        title={foodObject.title}
-        time={foodObject.time}
-        ingredients={foodObject.ingredients}
-        instructions={foodObject.instructions}/>)
+
+
+    const favoriteCards = (foodObject) => {
+        // if the recipe card's id is in favoriteFoods, return that recipe card
+        if (favoriteFoods.some(favoriteFood => favoriteFood.id === foodObject.id)){
+            return(
+                <RecipeCard 
+                id = {foodObject.id}
+                key={foodObject.id}
+                favorite={foodObject.favorite}
+                changeFavorite = {changeFavorite}
+                category={foodObject.category}
+                image={foodObject.image}
+                title={foodObject.title}
+                time={foodObject.time}
+                ingredients={foodObject.ingredients}
+                instructions={foodObject.instructions}
+            />
+            )
+        }
+    }
 
     return(
         <div className="home">
