@@ -23,12 +23,9 @@ const Home = ({foodData,changeFavorite}) => {
       })
 
     return(
-        <div>
-            <CategoryNav />
-            <div className="home">
-                <div className="recipeContainer">
-                    {renderData}
-                </div>
+        <div className="home">
+            <div className="recipeContainer">
+                {renderData}
             </div>
         </div>
     )
