@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import '../Categorynav.css'
 import { NavLink } from "react-router-dom";

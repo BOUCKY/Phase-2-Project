@@ -40,7 +40,7 @@ const AddRecipe = ({setFoodData}) => {
                     type="text"
                     id='category'
                     name='category'
-                    placeholder="Category"
+                    placeholder="Please Choose Category From Options Above"
                     value={formData.category}
                     onChange={handleChange}
                 />
