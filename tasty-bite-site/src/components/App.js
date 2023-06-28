@@ -5,7 +5,6 @@ import NavBar from './Navbar';
 import Home from './Home';
 import AddRecipe from './AddRecipe';
 import Favorites from './Favorites';
-import CategoryNav from './Categorynav';
 import Dinners from './Dinners';
 import Desserts from './Desserts';
 import Drinks from './Drinks';
@@ -70,8 +69,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-        <h1>Tasty Bites</h1>
-        <CategoryNav />
+        <h1 className='tasty-bites'>Tasty Bites</h1>
         <Routes>
           <Route path='/' element={<Home foodData={foodData} changeFavorite={changeFavorite}/>} />
           <Route path='addrecipe' element={<AddRecipe setFoodData={setFoodData}/>} />

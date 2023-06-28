@@ -1,5 +1,6 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
+import CategoryNav from "./Categorynav";
 
 const Favorites = ({favoriteFoods, changeFavorite}) => {
     const favoriteCards = favoriteFoods.map(foodObject => <RecipeCard id = {foodObject.id}
@@ -13,9 +14,12 @@ const Favorites = ({favoriteFoods, changeFavorite}) => {
         ingredients={foodObject.ingredients}
         instructions={foodObject.instructions}/>)
     return(
-        <div className="home">
-            <div className="recipeContainer">
-                {favoriteCards}
+        <div>
+            <CategoryNav />
+            <div className="home">
+                <div className="recipeContainer">
+                    {favoriteCards}
+                </div>
             </div>
         </div>
     )

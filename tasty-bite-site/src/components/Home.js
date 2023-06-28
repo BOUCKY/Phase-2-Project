@@ -1,6 +1,7 @@
 import React from "react";
 import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
+import CategoryNav from "./Categorynav";
 
 const Home = ({foodData,changeFavorite}) => {
    
@@ -22,9 +23,12 @@ const Home = ({foodData,changeFavorite}) => {
       })
 
     return(
-        <div className="home">
-            <div className="recipeContainer">
-                {renderData}
+        <div>
+            <CategoryNav />
+            <div className="home">
+                <div className="recipeContainer">
+                    {renderData}
+                </div>
             </div>
         </div>
     )
