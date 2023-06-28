@@ -1,11 +1,10 @@
 import React from "react";
 import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
-import CategoryNav from "./Categorynav";
 
-const Home = ({foodData,changeFavorite}) => {
-   
-      const renderData = foodData.map((foodObject) => {
+const Home = ({foodData,changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
+    
+    const renderCard = (foodObject) => {
         return(
             <RecipeCard
                 id = {foodObject.id}
@@ -20,15 +19,35 @@ const Home = ({foodData,changeFavorite}) => {
                 instructions={foodObject.instructions}
             />
         )
-      })
+      }
+    const renderData = foodData.map(renderCard)
 
     return(
+
         <div className="home">
+            <h2 className="foodTitle" >Drinks</h2>
             <div className="recipeContainer">
-                {renderData}
+                {allDrinks.map(renderCard)}
+            </div>
+            <h2 className="foodTitle" >Breakfast</h2>
+            <div className="recipeContainer">
+                {allBreakfast.map(renderCard)}
+            </div>
+            <h2 className="foodTitle" >Lunch</h2>
+            <div className="recipeContainer">
+                {allLunches.map(renderCard)}
+            </div>
+            <h2 className="foodTitle" >Dinner</h2>
+            <div className="recipeContainer">
+                {allDinners.map(renderCard)}
+            </div>
+            <h2 className="foodTitle" >Dessert</h2>
+            <div className="recipeContainer">
+                {allDesserts.map(renderCard)}
             </div>
         </div>
     )
 }
 
 export default Home
+

@@ -40,6 +40,8 @@ function App() {
     return food.category.toLowerCase() === "breakfast"
   })
 
+  const allFoods = {allDrinks, allBreakfast, allLunches, allDinners, allDesserts}
+
   useEffect(() => {
       fetch('http://localhost:3000/recipes')
         .then((response) => response.json())
@@ -73,7 +75,7 @@ function App() {
         <h1 className='tasty-bites'>Tasty Bites</h1>
         <CategoryNav />
         <Routes>
-          <Route path='/' element={<Home foodData={foodData} changeFavorite={changeFavorite}/>} />
+          <Route path='/' element={<Home foodData={foodData} changeFavorite={changeFavorite} allFoods={allFoods}/>} />
           <Route path='addrecipe' element={<AddRecipe setFoodData={setFoodData}/>} />
           <Route path='favorites' element={<Favorites favoriteFoods={favoriteFoods} changeFavorite ={changeFavorite}/>} />
           <Route path='dinners' element={<Dinners allDinners = {allDinners} changeFavorite = {changeFavorite}/>}/>
