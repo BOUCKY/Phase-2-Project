@@ -12,6 +12,7 @@ const CategoryNav = () => {
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="desserts">Deserts</NavLink></li>
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="lunch">Lunch</NavLink></li>
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="drinks">Drinks</NavLink></li>
+                <li className="nav-bar-list"><NavLink className="nav-bar-link" to="breakfast">Drinks</NavLink></li>
             </div>
         </div>
     )
