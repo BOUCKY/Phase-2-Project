@@ -3,7 +3,6 @@ import RecipeCard from "./RecipeCard";
 
 const Favorites = ({favoriteFoods, changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
 
-
     const favoriteCards = (foodObject) => {
         // if the recipe card's id is in favoriteFoods, return that recipe card
         if (favoriteFoods.some(favoriteFood => favoriteFood.id === foodObject.id)){

@@ -2,16 +2,28 @@
     width: 100%;
     height: 75px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    border-bottom: 1px solid #96350b;
+    margin-bottom: 75px;
 }
-
+.header:hover{
+    box-shadow: 0px 8px 16px 0px rgba(25, 2, 2, 0.336);
+  }
 .nav-bar{
-    width: 95%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
 }
+.tasty-bites{
+    color: #96350b;
+    font-size: 50px;
+    margin: 0px 20px;
+    display: flex;
+    float: left;
+  }
 .nav-bar-list{
     list-style: none;
 }
@@ -24,3 +36,20 @@
 .nav-bar-link:hover{
     opacity: 1;
 }
+
+/* Responsiveness */
+@media screen and (max-width: 550px) {
+    .tasty-bites{
+        font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .tasty-bites{
+        font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .tasty-bites{
+        font-size: 30px;
+    }
+  }

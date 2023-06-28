@@ -61,7 +61,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-        <h1 className='tasty-bites'>Tasty Bites</h1>
+        <h1 className='welcome'>Welcome to Tasty Bites!</h1>
         <CategoryNav />
         <Routes>
           <Route path='/' element={<Home changeFavorite={changeFavorite} allFoods={allFoods} />} />
