@@ -45,3 +45,22 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+
+
+@media screen and (max-width: 550px) {
+    .nav-bar-link{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav-bar-link{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav-bar-link{
+        font-size: 10px;
+    }
+}

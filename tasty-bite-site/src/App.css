@@ -7,3 +7,22 @@
   font-size: 60px;
   margin: 50px 0px;
 }
+
+
+@media screen and (max-width: 550px) {
+  .tasty-bites{
+      font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tasty-bites{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .tasty-bites{
+      font-size: 30px;
+  }
+}
