@@ -10,6 +10,7 @@ import Dinners from './Dinners';
 import Desserts from './Desserts';
 import Drinks from './Drinks';
 import Lunch from './Lunch';
+import Breakfasts from './Breakfasts';
 
 function App() {
 
@@ -20,19 +21,23 @@ function App() {
   })
 
   const allDrinks = foodData.filter(food => {
-    return food.category === "drinks"
+    return food.category.toLowerCase() === "drinks"
   })
 
   const allDinners = foodData.filter(food => {
-    return food.category === "dinner"
+    return food.category.toLowerCase() === "dinner"
   })
 
   const allLunches = foodData.filter(food => {
-    return food.category === "lunch"
+    return food.category.toLowerCase() === "lunch"
   })
 
   const allDesserts = foodData.filter(food => {
-    return food.category === "dessert"
+    return food.category.toLowerCase() === "dessert"
+  })
+
+  const allBreakfast = foodData.filter(food => {
+    return food.category.toLowerCase() === "breakfast"
   })
 
   useEffect(() => {
@@ -74,6 +79,7 @@ function App() {
           <Route path='desserts' element={<Desserts allDesserts = {allDesserts} changeFavorite = {changeFavorite} />} />
           <Route path='lunch' element={<Lunch allLunches = {allLunches} changeFavorite = {changeFavorite}/>} />
           <Route path='drinks' element={<Drinks allDrinks = {allDrinks} changeFavorite = {changeFavorite}/>} />
+          <Route path='breakfast' element={<Breakfasts allBreakfast = {allBreakfast} changeFavorite = {changeFavorite}/>} />
         </Routes>
       </div>
     </BrowserRouter>
