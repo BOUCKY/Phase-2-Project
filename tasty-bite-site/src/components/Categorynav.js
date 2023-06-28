@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 
 const CategoryNav = () => {
     return(
-        <div className="header">
-            <div className="nav-bar">
+        <div className="category-header">
+            <div className="category-nav-bar">
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="dinners">Dinners</NavLink></li>
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="desserts">Desserts</NavLink></li>
                 <li className="nav-bar-list"><NavLink className="nav-bar-link" to="lunch">Lunch</NavLink></li>
