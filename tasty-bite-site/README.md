@@ -37,3 +37,4 @@ As a user you can plenty of options available to you.
 Kevin Mrozek https://github.com/5billon
 Alexis Boucouvalas https://github.com/BOUCKY
 Harjas Bedi https://github.com/harjas816
+Syeda Anjum https://github.com/syedaeanjum

@@ -34,7 +34,7 @@ const RecipeCard = ({title, image, time, ingredients, instructions, favorite, ch
     return(
         <div className="recipe-card">
             {/* If card is true, display the front, if not, display the back. */}
-            {card ? [front]: [back]}
+            {card ? front: back}
             {/* If card is true, (meaning the front of the card is being displayed) show the favorite button. If not, (back of card is displayed) don't display it. */}
             {card ? <button className="favorite" onClick={handleFavorite}>{favorite ? '❤️' : '🖤'}</button> : <button style={{ display: "none" }}></button>}
         </div>
