@@ -11,6 +11,7 @@ import Desserts from './Desserts';
 import Drinks from './Drinks';
 import Lunch from './Lunch';
 import Breakfasts from './Breakfasts';
+import Footer from './Footer';
 
 function App() {
 
@@ -90,6 +91,7 @@ function App() {
           <Route path='drinks' element={<Drinks allDrinks = {allDrinks} changeFavorite = {changeFavorite}/>} />
           <Route path='breakfast' element={<Breakfasts allBreakfast = {allBreakfast} changeFavorite = {changeFavorite}/>} />
         </Routes>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

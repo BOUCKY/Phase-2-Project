@@ -10,12 +10,21 @@
 }
 .header:hover{
     box-shadow: 0px 8px 16px 0px rgba(25, 2, 2, 0.336);
-  }
+}
 .nav-bar{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
+}
+.footbar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    padding:40px 0px;
+    border-top: 1px solid #96350b;
+    background-color: #fcd586
 }
 .tasty-bites{
     color: #96350b;
@@ -35,6 +44,17 @@
 }
 .nav-bar-link:hover{
     opacity: 1;
+}
+.foot-bar-link{
+    text-decoration: none;
+    opacity: 0.6;
+    color: #404ac9;
+    font-size: 25px;
+    font-weight:bold;
+}
+.foot-bar-link:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* Responsiveness */

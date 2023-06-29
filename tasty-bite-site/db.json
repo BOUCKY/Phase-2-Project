@@ -46,7 +46,7 @@
     },
     {
       "category": "drinks",
-      "favorite": false,
+      "favorite": true,
       "id": 3,
       "title": "Moscow Mule",
       "image": "https://bakeitwithlove.com/wp-content/uploads/2022/07/Moscow-Mule-sq.jpg",
