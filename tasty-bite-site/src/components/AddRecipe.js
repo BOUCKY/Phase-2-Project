@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../Form.css'
 
 const initialState = {
-    category: '',
+    //category: '',
     title: '',
     image: '',
     time: '',
@@ -65,7 +65,6 @@ const AddRecipe = ({ setFoodData }) => {
         { value: 'dinner', label: "Dinner" },
         { value: 'dessert', label: "Dessert" }
     ]
-
     return (
         <div className="formContainer">
             <h1 className="yourRecipe">Add Your Recipe Here!</h1>
