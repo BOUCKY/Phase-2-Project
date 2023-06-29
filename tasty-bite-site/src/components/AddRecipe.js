@@ -34,6 +34,7 @@ const AddRecipe = ({ setFoodData }) => {
                 setFormData(initialState)
             })
     }
+    console.log(formData)
     function handleChange(e) {
         console.log(e.target)
         setFormData((currentFormData) => ({ ...currentFormData, [e.target.name]: e.target.value }))
