@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Tasty Bites!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tasty Bites is a branch new `react.js` based website trying to grow its prowess in the recipe sharing field!
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+To setup how to use this website you will have to start with retrieving the information from the backend.
 
-### `npm start`
+```console
+$ json-server --watch db.json
+or
+$ npx json-server --watch db.json
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can test this by clicking the directory that pops up in your terminal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[http://localhost:3000/recipes](http://localhost:3000/recipes)
 
-### `npm test`
+After that you will have to run `npm start` inside of a new terminal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What you can do on Tasty Bites!
 
-### `npm run build`
+As a user you can plenty of options available to you. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. You can on initial load up of the page see all of our current recipes listed on our website!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. You can sort through what type of recipes you are looking for, currently we hold drinks, breakfast, lunch, dinner and dessert recipes!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. You can click on the heart inside of each recipe card to favorite ones you wish to revisit later!
 
-### `npm run eject`
+4. You can click on the image of each recipe to display the back of card, containing all the ingredients you would need create the recipe! As well as a step by step process on how to make it!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. You can go to the add recipe route and submit a form of your own recipe! It must fit into one of our categories and it will display in whichever tab you selected that it was!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Our team
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Kevin Mrozek https://github.com/5billon
+Alexis Boucouvalas https://github.com/BOUCKY
+Harjas Bedi https://github.com/harjas816
