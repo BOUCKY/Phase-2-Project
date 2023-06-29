@@ -71,7 +71,6 @@ const AddRecipe = ({ setFoodData }) => {
             <form className="form" onSubmit={handleSubmit}>
                 <div className="select-div">
                     <label>
-                        What is your recipe?
                         <select name ="category" onChange={handleChange} className="dropdown-menu">
                             {options.map((option) => (
                                 <option
