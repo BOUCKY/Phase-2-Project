@@ -15,6 +15,11 @@ const AddRecipe = ({ setFoodData }) => {
     function handleSubmit(e) {
         e.preventDefault()
 
+        if (formDataIsEmpty()) {
+            alert('Please Fill out the Form in its Entirety');
+            return; // Stop further execution
+          }
+
         fetch('http://localhost:3000/recipes', {
             method: 'POST',
             headers: {
@@ -33,7 +38,26 @@ const AddRecipe = ({ setFoodData }) => {
         console.log(e.target)
         setFormData((currentFormData) => ({ ...currentFormData, [e.target.name]: e.target.value }))
     }
+
+    function formDataIsEmpty() {
+        // Check if any of the required fields are empty
+        if (
+          !formData.category ||
+          !formData.title ||
+          !formData.image ||
+          !formData.time ||
+          !formData.ingredients ||
+          !formData.instructions
+        ) {
+          return true; // Form data is empty  
+        }
+    
+        return false; // Form data is not empty
+      }
+    
+
     const options = [
+        { value: '', label: "Category" },
         { value: 'drinks', label: "Drinks" },
         { value: 'breakfast', label: "Breakfast" },
         { value: 'lunch', label: "Lunch" },
@@ -45,19 +69,21 @@ const AddRecipe = ({ setFoodData }) => {
         <div className="formContainer">
             <h1 className="yourRecipe">Add Your Recipe Here!</h1>
             <form className="form" onSubmit={handleSubmit}>
-                <label>
-                    What is your recipe?
-                    <select name ="category" onChange={handleChange} className="dropdown-menu">
-                        {options.map((option) => (
-                            <option
-                                key={option.value}
-                                value={option.value}
-                            >
-                                {option.label}
-                            </option>
-                        ))}
-                    </select>
-                </label>
+                <div className="select-div">
+                    <label>
+                        What is your recipe?
+                        <select name ="category" onChange={handleChange} className="dropdown-menu">
+                            {options.map((option) => (
+                                <option
+                                    key={option.value}
+                                    value={option.value}
+                                >
+                                    {option.label}
+                                </option>
+                            ))}
+                        </select>
+                    </label>
+                </div>
                 <input className="formInput"
                     type="text"
                     id='title'

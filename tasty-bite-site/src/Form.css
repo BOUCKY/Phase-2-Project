@@ -22,12 +22,28 @@
     background-color: #fdfcda;
     padding: 20px 0px;
 }
+.select-div{
+    width: 90%;
+}
+.dropdown-menu{
+    display: flex;
+    width: 100%;
+    height: 40.8px;
+    margin: 20px 0px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border:  3px solid #96350b;
+    background-color: rgb(254, 254, 234);
+    
+}
 .formInput{
     padding: 10px 0px;
     margin: 20px 20px;
     width: 90%;
     text-align: center;
     background-color: rgb(254, 254, 234);
+    outline: none;
     border: 3px solid #96350b;
 }
 .submitButton{

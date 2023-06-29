@@ -33,13 +33,12 @@
 }
 .foodPic{
     width: 100%;
-    opacity: 0.6;
 }
 .foodPic:hover{
     cursor: pointer;
 }
 .recipe-card:hover .foodPic{
-    opacity: 1;
+    opacity: 0.6;
 }
 
 .title{
