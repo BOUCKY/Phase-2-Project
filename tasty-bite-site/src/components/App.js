@@ -48,13 +48,28 @@ function App() {
   
   // Displays just the favorited recipe cards on the favorite page
   function changeFavorite(id){
-    console.log("hello")
     const foods = [...foodData]
     const foodFound = foods.find(item => {
       return item.id === id
     })
     foodFound.favorite = !foodFound.favorite
     setFoodData(foods)
+    const changedFood = foodData.find(item => {
+      return item.id === id 
+    })
+    handleFavoriteUpdate(changedFood)
+  }
+
+  function handleFavoriteUpdate(foodObj){
+    fetch(`http://localhost:3000/recipes/${foodObj.id}`,{
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(foodObj)
+    })
+    .then(res => res.json())
+    .then (newobj => console.log(newobj))
   }
 
   return (
