@@ -1,14 +1,15 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import '../Form.css'
 
 const initialState = {
     category: '',
     title: '',
     image: '',
+    time: '',
     ingredients: '',
     instructions: '',
 }
-const AddRecipe = ({setFoodData}) => {
+const AddRecipe = ({ setFoodData }) => {
     const [formData, setFormData] = useState(initialState)
 
     function handleSubmit(e) {
@@ -30,20 +31,33 @@ const AddRecipe = ({setFoodData}) => {
     }
     function handleChange(e) {
         console.log(e.target)
-        setFormData((currentFormData) => ({...currentFormData, [e.target.name]: e.target.value}))
+        setFormData((currentFormData) => ({ ...currentFormData, [e.target.name]: e.target.value }))
     }
-    return(
+    const options = [
+        { value: 'drinks', label: "Drinks" },
+        { value: 'breakfast', label: "Breakfast" },
+        { value: 'lunch', label: "Lunch" },
+        { value: 'dinner', label: "Dinner" },
+        { value: 'dessert', label: "Dessert" }
+    ]
+
+    return (
         <div className="formContainer">
             <h1 className="yourRecipe">Add Your Recipe Here!</h1>
             <form className="form" onSubmit={handleSubmit}>
-                <input className="formInput"
-                    type="text"
-                    id='category'
-                    name='category'
-                    placeholder="Please Choose Category From Options Above"
-                    value={formData.category}
-                    onChange={handleChange}
-                />
+                <label>
+                    What is your recipe?
+                    <select name ="category" onChange={handleChange} className="dropdown-menu">
+                        {options.map((option) => (
+                            <option
+                                key={option.value}
+                                value={option.value}
+                            >
+                                {option.label}
+                            </option>
+                        ))}
+                    </select>
+                </label>
                 <input className="formInput"
                     type="text"
                     id='title'
