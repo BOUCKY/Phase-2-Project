@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../Recipe.css'
 import RecipeCard from "./RecipeCard";
 
 const Home = ({changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
+
+    useEffect(() => {
+        document.title="Tasty Bites | "
+    }, [])
     
     const renderCard = (foodObject) => {
         return(
