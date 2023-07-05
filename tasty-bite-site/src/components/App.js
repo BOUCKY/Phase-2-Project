@@ -42,7 +42,7 @@ function App() {
 
   // Fetch the food data from the db.json. Use useEffect to ge them to display on the page
   useEffect(() => {
-      fetch('http://localhost:3000/recipes')
+      fetch('https://tasty-bites-backend-mkkq.onrender.com/recipes')
         .then((response) => response.json())
         .then((data) => setFoodData(data))
     }, [])
@@ -62,7 +62,7 @@ function App() {
   }
 
   function handleFavoriteUpdate(foodObj){
-    fetch(`http://localhost:3000/recipes/${foodObj.id}`,{
+    fetch(`https://tasty-bites-backend-mkkq.onrender.com/recipes/${foodObj.id}`,{
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

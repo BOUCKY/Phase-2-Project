@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "favorite": false,
+      "favorite": true,
       "category": "drinks",
       "title": "Strawberry Mojito",
       "image": "https://theblondcook.com/wp-content/uploads/2022/05/strawberry-mojitos-2-4.jpg",

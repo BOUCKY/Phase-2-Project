@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import RecipeCard from "./RecipeCard";
 
 const Favorites = ({favoriteFoods, changeFavorite, allFoods:{allDrinks, allBreakfast, allLunches, allDinners, allDesserts}}) => {
+
+    useEffect(() => {
+        document.title="Tasty Bites | Favorites"
+    }, [])
 
     const favoriteCards = (foodObject) => {
         // if the recipe card's id is in favoriteFoods, return that recipe card

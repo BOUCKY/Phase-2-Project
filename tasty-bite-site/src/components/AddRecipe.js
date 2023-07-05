@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../Form.css'
 
 const initialState = {
@@ -10,6 +10,11 @@ const initialState = {
     instructions: '',
 }
 const AddRecipe = ({ setFoodData }) => {
+
+    useEffect(() => {
+        document.title="Tasty Bites | Add Recipe"
+    }, [])
+
     const [formData, setFormData] = useState(initialState)
 
     function handleSubmit(e) {
@@ -20,7 +25,7 @@ const AddRecipe = ({ setFoodData }) => {
             return; // Stop further execution
           }
 
-        fetch('http://localhost:3000/recipes', {
+        fetch('https://tasty-bites-backend-mkkq.onrender.com/recipes', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
